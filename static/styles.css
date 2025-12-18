@@ -1,0 +1,88 @@
+:root {
+    --primary: #5C4B51;
+    --secondary: #8CBEB2;
+    --tertiary: #F2EBBF;
+    --quartary: #F3B562;
+    --quinary: #F06060;
+}
+
+html {
+    background-color: var(--tertiary);
+} 
+
+body {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    border: 10px solid var(--secondary);
+    font-family: 'Courier New', monospace;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    background-color: var(--quinary);
+    color: white;
+    justify-content: right;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: var(--quinary);
+}
+
+.header h1 {
+    /* color: var(--quartary); */
+    color: white;
+    font-size: 35px;
+    margin: 0px;
+    padding: 20px;
+}
+
+.page-intro {
+    display: flex;
+}
+
+.page-selection span {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: left;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    padding-left: 10px;
+}
+
+.page-selection {
+    float: left;
+    background-color: var(--quartary);
+    text-decoration: none;
+    width: 100%;
+    /* justify-content: left; */
+}
+
+.page-selection a {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+.page-selection a:hover {
+    background-color: var(--quinary);
+}
+
+.page-body {
+    display: flex;
+    flex: 1;
+    color: white;
+    background-color: var(--primary);
+    /* height: 700px; */
+    padding: 20px;
+}

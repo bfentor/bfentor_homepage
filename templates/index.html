@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Balazs Fentor's Homepage</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="My personal homepage for employers and anyone who cares (But mostly employers)" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="header">
+    <h1 class="header">Balazs Fentor's Homepage</h1>
+  </div>
+  <div class="page-selection">
+    <span>
+      <a href="/">Home</a>
+      <a href="/github">Github</a>
+      <a href="/cv">CV</a>
+      <!-- <a href="/contact">Get in touch</a>
+      <a href="/about">About</a> -->
+    </span>
+  </div>
+  <div class="page-body">
+    <div>
+      {% block body %}
+      <div class="page-intro">
+        <div>
+          <h2>Hi!</h2>
+          <p>On this page, you should be able to find everything about me that you need to know. Use the navbar to navigate to different sections.</p>
+          <h2>About This Site</h2>
+          <p>While it may look humble, it serves its purpose. Why make it any more complicated than it needs to be? My Github speaks for itself, so there's no reason for me to brag about my coding chops with this site (Or vibecode, which I despise)</p>
+        </div>
+        <img style="max-width: 200px; max-height: fit-content;" src="{{ url_for('static', filename='image.jpg') }}" alt="Balazs Fentor self portrait">
+      </div>
+      <h2>A Note On LLMs</h2>
+      <p>I don't like the code they generate, I don't like using them, and I don't think they make anyone any faster in the long run. Please see <a style="color: var(--quartary);" href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"> this study</a> as just one example of many.</p>
+      <p>To be clear: I don't use LLMs to generate code in any of my projects</p>
+      <h2>Contact</h2>
+      <p>If something seems broken, or you'd like to get in touch, please shoot me an email at
+        <a href="mailto: fentorb24@gmail.com" style="color: var(--quartary);">fentorb24@gmail.com</a>
+      </p> 
+      {% endblock %}
+    </div>
+  </div>
+  <footer> © 2025 www.fentorweb.hu - All Rights Reserved. </footer>
+</body>
+</html>
