@@ -13,6 +13,7 @@ html {
 body {
     background-color: white;
     max-width: 700px;
+    /* min-width: 700px; */
     margin: auto;
     border: 10px solid var(--secondary);
     font-family: 'Courier New', monospace;
@@ -50,6 +51,11 @@ p {
 
 .page-intro {
     display: flex;
+}
+
+#next-to-image {
+    /* width: 400px; */
+    width: 61%;
 }
 
 .page-selection span {
@@ -91,3 +97,13 @@ p {
     /* height: 700px; */
     padding: 20px;
 }
+
+#image {
+    max-width: 200px; 
+    object-fit: contain; 
+    margin-left: 45px;
+}
+/* 
+@media (max-width: 700px) {
+    
+} */
