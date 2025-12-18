@@ -103,7 +103,19 @@ p {
     object-fit: contain; 
     margin-left: 45px;
 }
-/* 
+
 @media (max-width: 700px) {
-    
-} */
+    .page-intro {
+        display: block;
+    }
+    #next-to-image {
+        width: auto;
+    }
+    #image {
+        margin-left: 0px;
+    }
+    #image-container {
+        display: grid;
+        justify-content: center;
+    }
+}

@@ -32,7 +32,9 @@
           <h2>About This Site</h2>
           <p>While it may look humble, it serves its purpose. Why make it any more complicated than it needs to be? My Github speaks for itself, so there's no reason for me to brag about my coding chops with this site (Or vibecode, which I despise)</p>
         </div>
-        <img id="image" src="{{ url_for('static', filename='image.jpg') }}" alt="Balazs Fentor self portrait">
+        <div id="image-container">
+          <img id="image" src="{{ url_for('static', filename='image.jpg') }}" alt="Balazs Fentor self portrait">
+        </div>
       </div>
       <h2>A Note On LLMs</h2>
       <p>I don't like the code they generate, I don't like using them, and I don't think they make anyone any faster in the long run. Please see <a style="color: var(--quartary);" href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"> this study</a> as just one example of many.</p>
