@@ -104,6 +104,12 @@ p {
     margin-left: 45px;
 }
 
+#image-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 700px) {
     .page-intro {
         display: block;
@@ -113,9 +119,5 @@ p {
     }
     #image {
         margin-left: 0px;
-    }
-    #image-container {
-        display: grid;
-        justify-content: center;
     }
 }
