@@ -28,21 +28,30 @@
       <div class="page-intro">
         <div id="next-to-image">
           <h2>Hi!</h2>
-          <p>On this page, you should be able to find everything about me that you need to know. Use the navbar to navigate to different sections.</p>
+          <p>On this page, you should be able to find everything about me that you need to know. Use the navbar to find my GitHub and CV</p>
           <h2>About This Site</h2>
-          <p>While it may look humble, it serves its purpose. Why make it any more complicated than it needs to be? My Github speaks for itself, so there's no reason for me to brag about my coding chops with this site (Or vibecode, which I despise)</p>
+          <p>
+            Hosted with Flask on my own homelab running Ubuntu Server. I used pure HTML + CSS because I enjoy retro-coding these things, and didn't see the point of boggin down the page with dynamic elements. That being said, I have experience with building modern looking pages using Dash and Flask.
+          </p>
         </div>
         <div id="image-container">
           <img id="image" src="{{ url_for('static', filename='image.jpg') }}" alt="Balazs Fentor self portrait">
         </div>
       </div>
-      <h2>A Note On LLMs</h2>
+      <h2>About me</h2>
+      <p>
+        I have experience as a Junior Software Engineer with Python. I'm an enthusiastic employee and I learn quickly, especially on-the-job. I also have experience daily driving Linux, as well as Linux System Administration.
+      </p>
+      <!-- <h2>A Note On LLMs</h2>
       <p>I don't like the code they generate, I don't like using them, and I don't think they make anyone any faster in the long run. Please see <a style="color: var(--quartary);" href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"> this study</a> as just one example of many.</p>
-      <p>To be clear: I don't use LLMs to generate code in any of my projects</p>
+      <p>To be clear: I don't use LLMs to generate code in any of my projects</p> -->
       <h2>Contact</h2>
-      <p>If something seems broken, or you'd like to get in touch, please shoot me an email at
+      <p>Email: 
         <a href="mailto: fentorb24@gmail.com" style="color: var(--quartary);">fentorb24@gmail.com</a>
       </p> 
+      <p>Mobile: 
+        <a href="tel:+36209773336" style="color: var(--quartary);">+36 20 977 3336</a>
+      </p>
       {% endblock %}
     </div>
   </div>
